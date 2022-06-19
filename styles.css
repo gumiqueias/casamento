@@ -21,8 +21,12 @@
 }
 
 body{
-  background-color: #FEEBC3;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+.img{
+  width: 420px;
+  height: 600;
 }
 
 .animacao-presente {
