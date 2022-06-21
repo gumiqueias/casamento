@@ -22,15 +22,17 @@
 
 
 #img-bg {
-  background-image: url("images/minha\ foto.png");
+  background-image: url("images/foto\ opaca.jpeg");
   min-height: 1000px;
   background-position: top;
   background-size: contain;
 }
 
-.opacity {
+.opacity1 {
   opacity: 0.9;
-  filter: alpha(opacity=60);
+}
+.opacity {
+  opacity: 0.2;
 }
 @media only screen and (max-width: 764px) {
   .resp {
