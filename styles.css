@@ -1,36 +1,50 @@
 /*CSS*/
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.text{
+.text {
   justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-@media only screen and (max-width: 425px ) {
+@media only screen and (max-width: 425px) {
   .text {
-      padding: 0 1rem;
-      width: 100%;
+    padding: 0 1rem;
+    width: 100%;
   }
 }
 
-body{
-  background-color: white;
+
+#img-bg {
+  background-image: url("images/minha\ foto.png");
+  min-height: 1000px;
+  background-position: top;
+  background-size: contain;
 }
 
-.img{
+.opacity {
+  opacity: 0.9;
+  filter: alpha(opacity=60);
+}
+@media only screen and (max-width: 764px) {
+  .resp {
+    width: 100%;
+  }
+}
+
+.img {
   width: 420px;
-  height: 600;
+  height: 600px;
 }
 
 .animacao-presente {
-  width: 100%;
+  
   position: relative;
   display: flex;
   justify-content: center;
@@ -42,24 +56,22 @@ body{
 @keyframes mymove {
   0%,
   100% {
-            transform: translateX(0%);
-            transform-origin: 50% 50%;
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
   }
   15% {
-            transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
   }
   30% {
-            transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
   }
   45% {
-            transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
   }
   60% {
-            transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
   }
   75% {
-            transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
   }
 }
-
-
